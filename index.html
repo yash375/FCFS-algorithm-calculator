@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--<title>Responsive Navigation Menu Bar</title>-->
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">FCFS Algorithm Calculator</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">FCFS Algorithm Calculator</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#" class="active">FCFS Algorithm</a></li>
+                    <li><a href="#">Round-Robin Algorithm</a></li>
+                    <li><a href="#">SJF Algorithm</a></li>
+                    <li><a href="#">SRTF Algorithm</a></li>
+                    <li><a href="#">Priority Algorithm</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="input">
+            <h1>Input</h1>
+            <div class="algorithm-name">
+                <p>Algorithm</p>
+                <input type="text" value="first come first serve(FCFS)" disabled>
+            </div>
+            <div class="arrive-time">
+                <p>Arrival Times</p>
+                <input type="text" required placeholder="e.g. 2 4 6 8">
+            </div>
+            <div class="burst-time">
+                <p>Burst Times</p>
+                <input type="text" required placeholder="e.g. 2 4 6 8">
+            </div>
+            <button class="solve">Solve</button>
+        </div>
+        <div class="output">
+            <div class="output-text">
+                <h1>Output</h1>
+                <p>FCFS</p>
+            </div>
+            <div class="gantt-chart">
+                <p>Gantt Chart</p>
+                <div class="chart">
+                    <div class="name">A</div>
+                    <div class="name">B</div>
+                    <div class="name">C</div>
+                    <div class="name">D</div>
+                </div>
+                <div class="chart-value">
+                    <div class="value-A">10</div>
+                    <div class="value-B">20</div>
+                    <div class="value-C">30</div>
+                    <div class="value-D">40</div>
+                    <div class="value-E">50</div>
+                </div>
+            </div>
+            <table class="table">
+                <tr>
+                    <th>Job</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Finish Time</th>
+                    <th>Turnaround Time</th>
+                    <th>Waiting Time</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="average-text">Average</td>
+                    <td class="average-turnaround">37 / 4 = 9.25</td>
+                    <td class="average-waiting">14 / 4 = 3.5</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2022 | <a href="http://totalprogrammingcode.blogspot.com/">Yash Aher</a> and <a href="http://shree-shiv.great-site.net/index.php">Swarup Vishwas</a></p>
+    </footer>
+
+    
+
+<script src="index.js"></script>
+
+</body>
+</html>
